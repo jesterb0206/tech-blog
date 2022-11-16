@@ -16,3 +16,25 @@ router.post("/", async (req, res) => {
         res.status(400).json(err);
     }
 });
+
+// Edit a post
+
+router.put("/:id", async (req, res) => {
+    try {
+        const updatedPost = await Post.update(
+            {
+                title: req.body.title,
+                content: req.body.content,
+            },
+            {
+                where: {
+                    id: req.params.id,
+                },
+            }
+        );
+        res.status(200).json(updatedPost);
+    } catch (err) {
+        console.log(err);
+        res.status(400).json(err);
+    }
+});
