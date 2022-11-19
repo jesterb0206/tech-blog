@@ -1,0 +1,11 @@
+{{> header}}
+<!-- Blog post homepage -->
+{{#each posts as |post|}}
+  <div class="blog-post">
+    <h4 id="currentDay">{{format_date post.date_created}}</h4>
+    <a id="post-title" data-id="{{post.id}}" href="/post/{{post.id}}"><h3
+      >{{post.title}}</h3></a>
+  </div>
+{{/each}}
+
+<script src="/js/homepage.js"></script>
