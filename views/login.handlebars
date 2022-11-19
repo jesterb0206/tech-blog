@@ -1,0 +1,25 @@
+<div class="login">
+  <h2>Log In</h2>
+  <form class="login-form">
+    <div class="form-group">
+      <label for="username-login">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username-login"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password-login">Password</label>
+      <input type="password" class="form-control" id="password-login" />
+    </div>
+    <p id="invalid" class="hide">Invalid username or password</p>
+    <button type="submit" class="btn btn-primary btn-custom">Submit</button>
+    <h4 id="create-account">Don't have an account?
+      <a id="create-account-btn" href="/signup">Create account</a></h4>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/js/login.js"></script>
