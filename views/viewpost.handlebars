@@ -1,0 +1,39 @@
+{{>header}}
+
+<div class="blog-post">
+  <h4>Posted by {{user.username}} on {{format_date date_created}}</h4>
+  <a><h3 id="post-title" data-id="{{id}}">{{title}}</h3></a>
+  <div class="blog-post-content">
+    <p>
+      {{content}}
+    </p>
+  </div>
+  <div class="comments">
+    <h3>Comments:</h3>
+    {{#each comments as |comment|}}
+      <div class="comment">
+        <h4>Posted by
+          {{comment.user.username}}
+          on
+          {{format_date comment.date_commented}}</h4>
+        <p>{{comment.comment}}</p>
+      </div>
+    {{/each}}
+  </div>
+  {{#if logged_in}}
+    <form id="submit-content">
+      <div class="form-group">
+        <label for="comment" class="leave-comment">Leave Comment:</label>
+        <textarea class="form-control" id="comment" rows="3"></textarea>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary btn-custom wide-btn"
+      >Submit</button>
+    </form>
+  {{/if}}
+</div>
+
+{{#if logged_in}}
+  <script src="/js/comment.js"></script>
+{{/if}}
