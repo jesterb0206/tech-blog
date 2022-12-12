@@ -1,15 +1,14 @@
-const router = require("express").Router();
-const { reset } = require("nodemon");
-const { User, Comment, Post } = require("../models");
-const withAuth = require("../utils");
+const router = require('express').Router();
+const { User, Comment, Post } = require('../models');
+const withAuth = require('../utils/auth');
 
 // Homepage
 
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   const postData = await Post.findAll();
   const posts = postData.map((post) => post.get({ plain: true }));
 
-  res.render("homepage", {
+  res.render('homepage', {
     posts,
     logged_in: req.session.logged_in,
   });
@@ -17,21 +16,21 @@ router.get("/", async (req, res) => {
 
 // Single post
 
-router.get("/post/:id", async (req, res) => {
+router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
           model: User,
-          attributes: ["username"],
+          attributes: ['username'],
         },
         {
           model: Comment,
-          attributes: ["comment", "date_commented", "user_id"],
+          attributes: ['comment', 'date_commented', 'user_id'],
           include: [
             {
               model: User,
-              attributes: ["username"],
+              attributes: ['username'],
             },
           ],
         },
@@ -39,7 +38,7 @@ router.get("/post/:id", async (req, res) => {
     });
 
     const posts = postData.get({ plain: true });
-    res.render("viewport", {
+    res.render('viewpost', {
       ...posts,
       logged_in: req.session.logged_in,
     });
@@ -51,35 +50,35 @@ router.get("/post/:id", async (req, res) => {
 
 // Login
 
-router.get("/login", (req, res) => {
+router.get('/login', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect("/");
+    res.redirect('/');
     return;
   }
 
-  res.render("login");
+  res.render('login');
 });
 
 // Logout
 
-router.get("/logout", (req, res) => {
+router.get('/logout', (req, res) => {
   if (!req.session.logged_in) {
-    res.redirect("/");
+    res.redirect('/');
     return;
   }
 
-  res.render("login");
+  res.render('login');
 });
 
 // Signup
 
-router.get("/signup", (req, res) => {
+router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
-    reset.redirect("/");
+    reset.redirect('/');
     return;
   }
 
-  res.render("signup");
+  res.render('signup');
 });
 
 module.exports = router;

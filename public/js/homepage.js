@@ -1,19 +1,19 @@
-const title = document.querySelector("#post-title");
+const title = document.querySelector('#post-title');
 
 const viewPost = async (event) => {
   event.stopPropagation();
-  const id = event.target.getAttribute("data-id");
+  const id = event.target.getAttribute('data-id');
 
   const response = await fetch(`/post/${id}`, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
   });
 
   if (response.ok) {
-    document.location.replace("/viewpost");
+    document.location.replace('/viewpost');
   } else {
-    console.log("Unable to view post!");
+    console.log('Unable to view post!');
   }
 };
 
-title.addEventListener("click", viewPost);
+title.addEventListener('click', viewPost);

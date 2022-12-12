@@ -1,27 +1,26 @@
 <header>
-  <!-- Need to come up with a unique title for Tech Blog -->
-  <h1 id="title">Untitled</h1>
+  <h1 id='title'>Tech Blog</h1>
   <nav>
     <ul>
-      <a href="/">
-        <li class="nav-link">Home</li>
+      <a href='/'>
+        <li class='nav-link'>Home</li>
       </a>
       {{#if logged_in}}
-        <a href="/dashboard">
-          <li class="nav-link">Dashboard</li>
+        <a href='/dashboard'>
+          <li class='nav-link'>Dashboard</li>
         </a>
       {{else}}
-        <a href="/login">
-          <li class="nav-link">Dashboard</li>
+        <a href='/login'>
+          <li class='nav-link'>Dashboard</li>
         </a>
       {{/if}}
       {{#if logged_in}}
-        <a id="logout" href="/logout">
-          <li class="nav-link">Log Out</li>
+        <a id='logout' href='/logout'>
+          <li class='nav-link'>Log Out</li>
         </a>
       {{else}}
-        <a href="/login">
-          <li class="nav-link">Log In</li>
+        <a href='/login'>
+          <li class='nav-link'>Log In</li>
         </a>
       {{/if}}
     </ul>

@@ -1,20 +1,20 @@
 {{> header}}
-<div class="d-flex justify-content-end">
+<div class='d-flex justify-content-end'>
   <a
-    href="/dashboard/newPost"
-    class="btn btn-primary btn-custom new-post-btn"
+    href='/dashboard/newPost'
+    class='btn btn-primary btn-custom new-post-btn'
   >New Post</a>
 </div>
-<div class="dashboard">
+<div class='dashboard'>
   {{#each posts as |post|}}
-    <a href="dashboard/edit/{{post.id}}">
+    <a href='dashboard/edit/{{post.id}}'>
       <h3
-        id="{{post.id}}"
-        data-id="{{post.id}}"
-        class="dashboard-post"
+        id='{{post.id}}'
+        data-id='{{post.id}}'
+        class='dashboard-post'
       >{{post.title}}</h3>
     </a>
   {{/each}}
 </div>
 
-<script src="/js/dashboard.js"></script>
+<script src='/js/dashboard.js'></script>

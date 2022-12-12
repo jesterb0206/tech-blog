@@ -1,9 +1,9 @@
-const { Post } = require("../../models");
-const router = require("express").Router();
+const router = require('express').Router();
+const { Post } = require('../../models');
 
 // Create a new post
 
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const newPost = await Post.create({
       title: req.body.title,
@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
 
 // Edit a post
 
-router.put("/:id", async (req, res) => {
+router.put('/:id', async (req, res) => {
   try {
     const updatedPost = await Post.update(
       {
@@ -41,7 +41,7 @@ router.put("/:id", async (req, res) => {
 
 // Delete a post
 
-router.delete("/:id", async (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     const postData = await Post.destroy({
       where: {

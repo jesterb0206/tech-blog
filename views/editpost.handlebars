@@ -1,32 +1,32 @@
 {{> header}}
-<form class="new-post">
-  <div class="form-group">
-    <label for="editPostTitle" class="title-id" id="{{id}}">Title</label>
+<form class='new-post'>
+  <div class='form-group'>
+    <label for='editPostTitle' class='title-id' id='{{id}}'>Title</label>
     <input
-      type="text"
-      class="form-control"
-      id="editPostTitle"
-      value="{{title}}"
+      type='text'
+      class='form-control'
+      id='editPostTitle'
+      value='{{title}}'
     />
   </div>
-  <div class="form-group">
-    <label for="editPostContent">Content</label>
+  <div class='form-group'>
+    <label for='editPostContent'>Content</label>
     <textarea
-      class="form-control"
-      id="editPostContent"
-      rows="3"
+      class='form-control'
+      id='editPostContent'
+      rows='3'
     >{{content}}</textarea>
   </div>
   <button
-    type="submit"
-    id="editPostBtn"
-    class="btn btn-primary btn-custom wide-btn"
+    type='submit'
+    id='editPostBtn'
+    class='btn btn-primary btn-custom wide-btn'
   >Edit Post</button>
   <button
-    type="submit"
-    id="deletePostBtn"
-    class="btn btn-primary btn-custom light wide-btn"
+    type='submit'
+    id='deletePostBtn'
+    class='btn btn-primary btn-custom light wide-btn'
   >Delete</button>
 </form>
 
-<script src="/js/editpost.js"></script>
+<script src='/js/editpost.js'></script>
