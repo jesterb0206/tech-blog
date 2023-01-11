@@ -51,6 +51,56 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 
 ## Usage
 
+<br>
+
+To begin, create an account with **Tech Blog** by entering a username (an email address is a valid username) and a secure password! Once you've created an account you'll automatically be signed in, however, from time to time you'll be signed out. To sign back in simply follow the example image down below!
+
+<br>
+
+![Sign Up](assets/sign-up.png)
+
+<br>
+
+![Log In](assets/log-in.png)
+
+<br>
+
+Once you're signed in, you'll be presented with the homepage, which includes existing blog posts and navigation links for the homepage, dashboard, and to log out!
+
+<br>
+
+![Homepage](assets/home-page.png)
+
+<br>
+
+If you click on an existing blog post, you'll be presented with the post's title, contents, creator’s username, and the date it was created! Currently, comment functionality is still being implemented, but you can get a sense for what it will look like with our seed comments!
+
+<br>
+
+![View Post](assets/view-post.png)
+
+<br>
+
+If you click on the dashboard option in the navigation, then you'll be taken to your dashboard and presented with blog posts you've created (if you've created any) and the option to add a new blog post. When you click on the button to add a new blog post, then you'll be prompted to enter both a title and contents for your blog post. When you're ready to publish your post simply click on the button to create a new blog post and you'll be taken back to your updated dashboard!
+
+<br>
+
+![Add A New Blog Post Button](assets/new-post-1.png)
+
+<br>
+
+![Create A New Blog Post](assets/new-post-2.png)
+
+<br>
+
+Finally, if you click on one of your existing blog posts in your dashboard then you'll be able to update or delete it!
+
+<br>
+
+![Update Or Delete A Blog Post](assets/edit-post.png)
+
+<br>
+
 ## Badges
 
 <br>
