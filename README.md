@@ -47,7 +47,7 @@
 
 <br>
 
-A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
+Tech Blog is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and (eventually) comment on other developers’ posts as well. Tech Blog follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. If you wish to contribute to the future development of Tech Blog, please email me at `jesterb@seattleu.edu `. Any help is welcome, just message me first and I can add you as a collaborator! If you don't know where to start, I've opened 3 issues in the repository that you can check out.
 
 <br>
 
