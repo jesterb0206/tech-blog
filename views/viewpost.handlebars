@@ -1,5 +1,4 @@
 {{>header}}
-
 <div class='blog-post'>
   <h4>Posted by {{user.username}} on {{format_date date_created}}</h4>
   <a><h3 id='post-title' data-id='{{id}}'>{{title}}</h3></a>
@@ -21,16 +20,18 @@
     {{/each}}
   </div>
   {{#if logged_in}}
-    <form id='submit-content'>
-      <div class='form-group'>
-        <label for='comment' class='leave-comment'>Leave Comment:</label>
-        <textarea class='form-control' id='comment' rows='3'></textarea>
-      </div>
-      <button
-        type='submit'
-        class='btn btn-primary btn-custom wide-btn'
-      >Submit</button>
-    </form>
+    <div class='container'>
+      <form id='submit-content'>
+        <div class='form-group-comment' id='leave-comment'>
+          <label for='comment' class='leave-comment'>Leave Comment:</label>
+          <textarea class='form-control' id='comment' rows='3'></textarea>
+          <button
+            type='submit'
+            class='btn btn-primary btn-custom wide-btn'
+          >Submit</button>
+        </div>
+      </form>
+    </div>
   {{/if}}
 </div>
 

@@ -1,18 +1,21 @@
 {{> header}}
-<form class='new-post' id='newPostForm'>
-  <div class='form-group'>
-    <label for='newPostTitle'>Title</label>
-    <input
-      class='form-control'
-      id='newPostTitle'
-      aria-describedby='emailHelp'
-    />
-  </div>
-  <div class='form-group'>
-    <label for='newPostContent'>Content</label>
-    <textarea class='form-control' id='newPostContent' rows='3'></textarea>
-  </div>
-  <button type='submit' class='btn btn-primary btn-custom wide-btn'>Create Post</button>
-</form>
+<div id='container-3'>
+  <form class='new-post' id='newPostForm'>
+    <div class='form-group'>
+      <label class='newPostTitle' for='newPostTitle'>Title</label>
+      <input
+        class='form-control'
+        id='newPostTitle'
+        aria-describedby='emailHelp'
+      />
+    </div>
+    <div class='form-group'>
+      <label class='newPostContent' for='newPostContent'>Content</label>
+      <textarea class='form-control' id='newPostContent' rows='3'></textarea>
+    </div>
+    <button type='submit' class='btn btn-primary btn-custom wide-btn'>Create
+      Post</button>
+  </form>
+</div>
 
 <script src='/js/newpost.js'></script>

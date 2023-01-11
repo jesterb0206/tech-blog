@@ -50,8 +50,8 @@ nav ul {
 }
 
 .blog-post {
-  padding-left: 15px;
   padding-top: 30px;
+  text-align: center;
 }
 
 .blog-post a {
@@ -73,23 +73,21 @@ h4 {
   color: var(--background);
   font-family: 'Quattrocento', serif;
   font-style: italic;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
 
 .login {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .login-form,
 .signup-form {
   background: var(--peach);
   border-radius: 10px;
-  box-shadow: 0 0 20px 2px var(--peach);
   color: var(--background);
-  height: 600px;
+  height: 550px;
   margin: auto;
   overflow: hidden;
-  padding: 20px 0;
   position: relative;
   text-align: center;
   width: 300px;
@@ -200,14 +198,57 @@ p {
   padding: 5px 0px;
   line-height: 1.8rem;
   font-size: 1.1rem;
+  font-family: 'Quattrocento', serif;
 }
 
 .blog-post-content {
-  padding: 15px 0px 15px 0px;
+  max-width: 750px;
+  margin: auto;
 }
 
 .wide-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-2 {
+  padding-bottom: 30px;
+}
+
+#container-3 {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.content-id,
+.title-id,
+.newPostTitle,
+.newPostContent {
+  font-size: 32px;
+}
+
+.leave-comment,
+#comment {
+  font-family: 'Quattrocento', serif;
+}
+
+.leave-comment {
+  margin-top: -15px;
+}
+
+#comment {
+  margin-top: 30px;
+}
+
+#leave-comment {
+  min-width: 600px;
 }
 
 .comment {
@@ -262,5 +303,17 @@ p {
 
   .new-post {
     margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #leave-comment {
+    min-width: 300px;
+  }
+
+  #container-3 {
+    max-width: 300px;
+    margin: auto;
+    padding-top: 75px;
   }
 }
