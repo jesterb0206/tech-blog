@@ -45,9 +45,19 @@
 
 ## Description
 
+<br>
+
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
+<br>
+
 ## Installation
+
+<br>
+
+Clone the repository to your local machine, open your terminal, and navigate to the root folder in the **Tech Blog** repository. To install the necessary dependencies, run `npm i` in your command-line terminal.
+
+<br>
 
 ## Usage
 
