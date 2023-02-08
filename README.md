@@ -143,10 +143,6 @@ Finally, if you click on one of your existing blog posts in your dashboard then 
 
 <br>
 
-![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
-
-<br>
-
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
 <br>
